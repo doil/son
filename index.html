@@ -20,6 +20,7 @@
   <script src="http://egmcard.com/sv/js/landing.js"></script>
   <link rel="stylesheet" type="text/css" href="http://egmcard.com/sv/css/co_scroll_b.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" />
+  <script type="text/javascript" src="./javascripts/main.js"></script>
   <script type="text/javascript" src="http://egmcard.com/sv/js/kakao.link.js"></script>
   <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <link type="text/css" rel="stylesheet" href="http://static.naver.com/openapi_map/maps_openapi.css?14501052001">
@@ -41,6 +42,7 @@
     }
     window.onload = playVid;
   </script>
+
   <!--// 갤럭시 동영상 재생과 관련되서 필요한 스크립트이다.-->
 
 </head>
@@ -183,17 +185,17 @@
       <div class="subWrap02_03">
         <div id="photo_viewer"><img src="http://egmcard.com/sv/images_b/scroll/scroll03b_photo_t.png" alt="아기사진" width="100%" /></div>
         <div> <!-- 배경이미지 & 사진갤러리 -->
-          <ul  class="scroll_photo">
-            <li><a href="http://egmcard.com/index.php?mode=baby&tag=jaeseong0104&view=photo" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/bb7f7bb29facf99ebf63673eb2d73a9720151214163451.JPG" width="100%" class="photo_img" /></a></li>
-            <li><a href="http://egmcard.com/index.php?mode=baby&tag=jaeseong0104&view=photo" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/00ad29d6e081a85b2b523029096e371820151214163508.JPG" width="100%" class="photo_img" /></a></li>
-            <li><a href="http://egmcard.com/index.php?mode=baby&tag=jaeseong0104&view=photo" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/0381bc8353a4507c2c22395b6bd6376b20151214163525.JPG" width="100%" class="photo_img" /></a></li>
-            <li><a href="http://egmcard.com/index.php?mode=baby&tag=jaeseong0104&view=photo" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/2d6e1e5492aefa2b196c73909945a79820151214163555.JPG" width="100%" class="photo_img" /></a></li>
-            <li><a href="http://egmcard.com/index.php?mode=baby&tag=jaeseong0104&view=photo" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/043bb501f0c0169e272cf272dfbfbfd120151214163942.JPG" width="100%" class="photo_img" /></a></li>
-            <li><a href="http://egmcard.com/index.php?mode=baby&tag=jaeseong0104&view=photo" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/af55a776e2b01d53d323946447767e9720151214164156.JPG" width="100%" class="photo_img" /></a></li>
-            <li><a href="http://egmcard.com/index.php?mode=baby&tag=jaeseong0104&view=photo" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/0967cb0ae21c1e633e29c12c5cff3b2320151214164336.JPG" width="100%" class="photo_img" /></a></li>
-            <li><a href="http://egmcard.com/index.php?mode=baby&tag=jaeseong0104&view=photo" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/35cce7892ed18e49e2c5de2d3e75d70a20151214164427.JPG" width="100%" class="photo_img" /></a></li>
-            <li><a href="http://egmcard.com/index.php?mode=baby&tag=jaeseong0104&view=photo" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/392f798bec8c05b8fa171b6d103c8afb20151214164443.JPG" width="100%" class="photo_img" /></a></li>
-            <li><a href="http://egmcard.com/index.php?mode=baby&tag=jaeseong0104&view=photo" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/beb4b526618d7f7918ac9eb3b57cf26320151214164926.JPG" width="100%" class="photo_img" /></a></li>
+          <ul  class="scroll_photo" id="photoList">
+            <li><a href="javascript:;" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/bb7f7bb29facf99ebf63673eb2d73a9720151214163451.JPG" width="100%" class="photo_img" /></a></li>
+            <li><a href="javascript:;" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/00ad29d6e081a85b2b523029096e371820151214163508.JPG" width="100%" class="photo_img" /></a></li>
+            <li><a href="javascript:;" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/0381bc8353a4507c2c22395b6bd6376b20151214163525.JPG" width="100%" class="photo_img" /></a></li>
+            <li><a href="javascript:;" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/2d6e1e5492aefa2b196c73909945a79820151214163555.JPG" width="100%" class="photo_img" /></a></li>
+            <li><a href="javascript:;" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/043bb501f0c0169e272cf272dfbfbfd120151214163942.JPG" width="100%" class="photo_img" /></a></li>
+            <li><a href="javascript:;" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/af55a776e2b01d53d323946447767e9720151214164156.JPG" width="100%" class="photo_img" /></a></li>
+            <li><a href="javascript:;" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/0967cb0ae21c1e633e29c12c5cff3b2320151214164336.JPG" width="100%" class="photo_img" /></a></li>
+            <li><a href="javascript:;" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/35cce7892ed18e49e2c5de2d3e75d70a20151214164427.JPG" width="100%" class="photo_img" /></a></li>
+            <li><a href="javascript:;" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/392f798bec8c05b8fa171b6d103c8afb20151214164443.JPG" width="100%" class="photo_img" /></a></li>
+            <li><a href="javascript:;" data-ajax="false"><img src="http://egmcard.com/qr/images/temp/thumnail/beb4b526618d7f7918ac9eb3b57cf26320151214164926.JPG" width="100%" class="photo_img" /></a></li>
           </ul>
         </div>
       </div>
@@ -257,6 +259,21 @@
   </script>
 </div>
 
+
+<div class="dim" id="photo_gall">
+    <div class="photo_gall">
+        <div class="inner">
+            <div class="imgs"  id="imgWrap">
+              <div class="img"></div>
+            </div>
+            <div class="ctrl">
+              <button class="prev">이전</button>
+              <button class="next">다음</button>
+            </div>
+        </div>
+    </div>
+  <button class="close">포토갤러리 닫기</button>
+</div>
 
 </body>
 </html>

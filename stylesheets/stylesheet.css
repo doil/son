@@ -50,8 +50,6 @@ a.button:active {
 }
 
 
-
-
 p.date{width:100%;color:#fff; text-align:center; text-shadow:none; background-color:#67b6a4; padding:10px 0;margin-bottom:25px;letter-spacing:1px;font-weight:bold;}
 .face .img img{
   margin-right:40px;
@@ -107,3 +105,10 @@ p.date{width:100%;color:#fff; text-align:center; text-shadow:none; background-co
   100% { -webkit-transform: translate3d(0,0,0) rotate(0deg); -webkit-transform-origin:center bottom; }
 }
 .family_face .name{vertical-align:middle;font-weight:bold;font-size:20px;}
+
+.greeting{width:100%;color:#fff; text-align:center; text-shadow:none; background-color:#625e3e; padding:10px 0;letter-spacing:1px;font-weight:bold;}
+.greeting span{color:#f6ff00;}
+
+.movie_area{margin:40px 0;}
+.movie_area .tit{text-align:center;width:80%;padding:10px;margin:20px auto;color:#888;font-weight:bold;border-radius:10px;border:3px solid #000;background-color:#fff;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
+.movie_area .box video{width:80%;}
